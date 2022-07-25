@@ -1,18 +1,20 @@
 {
   "compilerOptions": {
+    "sourceMap": true,
     "target": "es5",
-    "lib": ["dom", "esnext"],
+    "lib": ["dom", "ESNext"],
     "allowJs": true,
-    "skipLibCheck": true,
     "strict": true,
     "forceConsistentCasingInFileNames": true,
-    "noEmit": true,
     "esModuleInterop": true,
-    "module": "CommonJS",
-    "resolveJsonModule": true,
+    "module": "commonjs",
     "isolatedModules": true,
-    "jsx": "preserve"
+    "jsx": "preserve",
+    "allowSyntheticDefaultImports": true,
+    "baseUrl": "./",
+    "outDir": "./dist",
+    "moduleResolution": "node"
   },
-  "include": ["**/*.ts", "**/*.tsx"],
+  "include": ["**/*.ts", "**/*.tsx", "babel.config.js"],
   "exclude": ["node_modules"]
 }
