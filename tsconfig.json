@@ -1,20 +1,25 @@
 {
   "compilerOptions": {
-    "sourceMap": true,
+    /* Basic Options */
     "target": "es5",
-    "lib": ["dom", "ESNext"],
-    "allowJs": true,
+    "module": "ESNext",
+    "lib": ["ES2015", "ES2016", "ES2017", "ES2018", "ES2019", "ES2020", "DOM"],
+    "jsx": "react",
+    "declaration": true,
+    "outDir": "./build",
+
+    /* Strict Type-Checking Options */
     "strict": true,
-    "forceConsistentCasingInFileNames": true,
+    "noImplicitAny": true,
+
+    /* Module Resolution Options */
+    "moduleResolution": "node",
     "esModuleInterop": true,
-    "module": "commonjs",
-    "isolatedModules": true,
-    "jsx": "preserve",
-    "allowSyntheticDefaultImports": true,
-    "baseUrl": "./",
-    "outDir": "./dist",
-    "moduleResolution": "node"
+
+    /* Advanced Options */
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true
   },
-  "include": ["**/*.ts", "**/*.tsx", "babel.config.js"],
-  "exclude": ["node_modules"]
+  "exclude": ["node_modules"],
+  "include": ["./src/**/*"]
 }
